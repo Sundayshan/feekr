@@ -1,0 +1,74 @@
+.user-head{
+	position: relative;
+ 	padding: 1rem;
+	font-size: 1.45rem;
+	background: #1abc9c;
+	border-bottom: none;
+	color: #fff;
+}
+.user-msg{
+	font-size: 1.4rem;
+    position: relative;
+    padding: 2rem 0;
+    background: #fff;
+    border-bottom: 1px solid #F5F5F5;
+}
+.nickname{
+	font-size: 1.4rem;
+}
+.user-msg .iconfont{
+	font-size: 1.8rem;
+	color: #999;
+}
+.user-msg>div:nth-of-type(1){
+	width: auto;
+}
+.user-msg>div:nth-of-type(2){
+	text-align: left;
+}
+.user-msg>div:nth-of-type(3){
+	width: 20%;
+}
+.user-opt{
+    background: #fff;
+	margin-top: 1.5rem;	
+	border-top: 1px solid #F5F5F5;
+}
+.user-pic{
+	display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.menu-group{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #F5F5F5;
+    font-size: 14px; 
+    display: block;
+}
+.menu-name{
+    width: 60%;
+    padding-left: 2rem;
+    text-align: left !important;
+}
+.menu-group .iconfont{
+	font-size: 1.8rem;
+	color: #999;
+}
+.menu-group .iconfont:nth-of-type(1){
+	text-align: right;
+}
+.usericon{
+	width: 20%;
+    padding-left: 2rem;
+}
+.table-mode {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.table-mode .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}

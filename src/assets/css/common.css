@@ -1,0 +1,49 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+li{list-style:none}
+img{vertical-align:top;border:none}
+html{
+	font-size: 12px;
+}
+body{
+    background-color: #f6f6f6;
+    color: #2d2d2d;
+    -webkit-font-smoothing: antialiased;
+    max-width: 640px;
+    margin: 0 auto;	
+}
+input{
+	outline: none;
+	border: none;
+}
+.footer ul li a{
+	color: #333;
+	font-size: 1rem;
+	text-decoration: none;
+}
+.footer ul{
+	display: flex;
+}
+.footer ul li{
+	text-align: center;
+	flex: 1;
+}
+.footer ul li span{
+	display: block;
+}
+.footer ul li span:nth-of-type(1){
+	font-size: 1.833rem;
+}
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+    border-top: 1px solid #e5e5e5;
+    padding: .5rem 0 .2rem;
+    z-index: 3;
+    width: 100%;
+    background: rgba(238,238,238,0.98);
+    font-family: PingFangSC-Thin, sans-serif;
+}
+#app .router-link-exact-active{
+	color: #1abc9c !important;
+}

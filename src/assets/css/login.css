@@ -1,0 +1,120 @@
+a{
+	text-decoration: none;
+	color: #333;
+}
+img{
+	width: 100%;
+}
+.login-content{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.login-inner{
+    background: #1abc9c;
+    overflow: hidden;
+}
+.logo{
+	width: 30%;
+    margin: 6rem auto 1rem;
+}
+.logo>span{
+	display: block;
+	width: 10.5rem;
+	height: 6rem;
+	background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    padding: 5rem 0 5rem;
+}
+.login-inner input{
+	border: none;
+	outline: none;
+	padding: 1.5rem 0.8rem;
+	background: transparent;
+	width: 90%;
+}
+.login-submit{
+    display: block;
+    border: none;
+    width: 90%;
+    margin: 3rem auto 0;
+    font-size: 1.4rem;
+    color: #1abc9c;
+    background: #fff;
+    padding: 1.2rem 0;
+    border-radius: 6px;
+}
+.login-inner .input-wrap {
+    border-bottom: 1px solid #8adece;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    color: #fff;
+}
+.login-content .iconfont{
+    color: #fff;
+    font-size: 2rem;
+}
+.login-content input::-webkit-input-placeholder{
+    color:#8adece;
+}
+.login-content input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#8adece;
+}
+.login-content input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#8adece;
+}
+.login-content input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#8adece;
+}
+.option-psd{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.option-psd>a{
+    color: #fff;
+    padding: 1rem 0;
+}
+.third-login .line{
+	border-top: 1px solid #8ddece;
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}
+.third-login .title{
+    width: 40%;
+    color: #8adece;
+}
+.third-title{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.third-login{
+    padding: 5rem 1rem 1rem;
+}
+.third-list .iconfont{
+    color: #e7fffa;
+    font-size: 2.4rem;
+}
+.third-list>a{
+	display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #18aa8d;
+    line-height: 4rem;
+    text-align: center;
+    margin: 0 1rem;
+}
+.third-list{
+    text-align: center;
+	padding: 2rem 0 1rem;
+}

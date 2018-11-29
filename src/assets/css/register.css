@@ -1,0 +1,62 @@
+.back-title{
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+.back-icon.iconfont{
+	color: #bbb;
+	position: absolute;
+    left: 1rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #ccc;
+    font-size: 2.3rem;
+}
+.register-content .input-wrap{
+    padding: .6rem 2rem;
+    background: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.register-content .input-wrap input{
+    width: 85%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+    color: #333;
+}
+.register-content .input-wrap>.iconfont{
+	font-size: 1.8rem;
+	color: #999;
+	vertical-align: middle;
+}
+.register-content{
+    padding: 2.5rem;
+}
+.btn-register{
+	display: block;
+    color: #fff;
+    background: #1abc9c;
+    width: 100%;
+    text-align: center; 
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    margin-top: 2rem;
+    border: none;
+
+}
+.protocol>p{
+	padding-top: 2rem;
+    text-align: center;
+    color: #666;
+}
+.color{
+	color: #1abc9c;
+}

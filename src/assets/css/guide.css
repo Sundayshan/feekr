@@ -1,0 +1,167 @@
+.guidePage{
+	padding-bottom: 60px;
+}
+.guidePage .search-form input{
+    padding: .5rem 0;
+    display: block;
+    width: 100%;
+    line-height: 1.6;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: #666;
+}
+.guidePage .search-icon{
+	background-position: 36%;
+}
+.guidePage .search-form{   
+    position: relative;
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 4rem;
+    border: none;
+}
+.guidePage .search-bar{
+	background: #fff;
+    padding: 2rem 1rem;
+}
+.txt-center{
+	text-align: center;
+}
+.season-rec{
+	padding: 1.5rem 0;
+}
+.city-desc{
+	color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.g-cityName{
+	padding: .5rem 0;
+}
+.guidePage .city{
+    padding-bottom: 2rem;
+}
+.g-province{
+    padding: 1.5rem 0;
+    line-height: 1.8;
+}
+.g-proSub{
+	color: #666;
+}
+.city-item-container{
+	padding: 1rem;
+}
+.cityshi{
+	width: 32%;
+	display: block;
+    margin-right: 2%;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+.cityshi:nth-of-type(3n){
+	margin-right: 0;
+}
+.g-city-list{
+	overflow: hidden;
+}
+.cityshi .city-name{
+    padding: .5rem 0 0
+}
+.city-container,.g-header{
+	background: #fff;
+    margin-top: 1rem;
+}
+.other-city{
+	position: relative;
+	background: #000;
+}
+.other-city>img{
+	opacity: .8;
+}
+.item-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+/*搜索页*/
+.searchPage{
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+    background: #f6f6f6;
+    -webkit-transition: all .3s ease-in; 
+    transition: all .3s ease-in; 
+    -webkit-transform: translate(100%, 0); 
+    transform: translate(100%, 0); 
+}
+.searchPage.show{
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.searchPage .search-btn{
+    background: #1abc9c;
+    color: #fff;
+    padding: .5rem .8rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+.searchPage .search-text{
+    padding: .5rem 0;
+    display: block;
+    width: 100%;
+    line-height: 1.6;
+    background: transparent;
+    font-size: 1.1rem;
+}
+.searchPage .search-input{
+    position: relative;
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 4rem;
+    padding: .3rem .8rem .3rem 3rem;
+    padding-left: 1rem;
+}
+.searchPage .table-cell:nth-of-type(1){
+    width: 12%;
+    color: #ccc;
+    font-size: 2.2rem;
+    text-align: left;
+}
+.searchPage .table-cell:nth-of-type(2){
+	width: 72%;
+}
+.searchPage .search-content{
+    padding: 1rem;
+    background-color: #fff;
+}
+.searchPage .search-wrap{
+    margin-top: 1rem;
+    background: #fff;
+    padding: 2rem 1rem;
+}
+.searchPage .recent-search{
+	font-size: 1.4rem;
+	line-height: 1.8;
+}
+.searchPage .hot-tag a{
+    margin-top: 1rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: .4rem 1.2rem;
+    border-radius: 2rem;
+    margin-right: .6rem;
+    color: #666;
+}
+.searchPage .hot-tag{
+    width: 85%;
+    margin: 1rem auto 0;
+}
