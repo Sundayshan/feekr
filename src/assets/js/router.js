@@ -7,47 +7,91 @@ import user from '../../component/index/user.vue'
 import register from '../../component/index/register.vue'
 import login from '../../component/index/login.vue'
 import play from '../../component/index/play.vue'
+import detail from '../../component/index/detail.vue'
+import city from '../../component/index/city.vue'
 
 export default new vueRouter({
 	routes:[
-		{
-			path:'/home',component:home
-//			children:[
-//				{
-//					path:'/home/play',component:play
-//				},
-//				{
-//					path:'/register',component:register
-//				},
-//				{
-//					path:'/login',component:login
-//				}
-//			]
+	    {
+			path:'/',
+			redirect:'/home',			
 		},
 		{
-			path:'/travel',component:tavel
+			path:'/home',component:home,
+			name:'Feekr',
+			//是否开启底部导航
+			meta:{
+				index:0,
+				isNavShow:true
+			}
 		},
 		{
-			path:'/guide',component:guide
+			path:'/home/:id',component:detail,
+			name:'产品详情',
+			meta:{
+				index:1,
+				isNavShow:false
+			},
+			props:true
+		},
+		{
+			path:'/travel',component:tavel,
+			name:'度假',
+			meta:{
+				index:0,
+				isNavShow:true
+			}
+		},
+		{
+			path:'/guide',component:guide,
+			name:'攻略',
+			meta:{
+				index:0,
+				isNavShow:true
+			}
 		},
 		{
 			path:'/user',component:user,
 			meta:{
+				index:0,
+				isNavShow:true,
 				requiresAuth: true //添加该字段，表示进入这个路由是需要登录的
 			}
 		},
 		{
-			path:'/play',component:play
+			path:'/play',component:play,
+			meta:{
+				index:1,
+				isNavShow:false
+			}
 		},
 		{
-			path:'/register',component:register
+			path:'/register',component:register,
+			meta:{
+				index:1,
+				isNavShow:false
+			}
 		},
 		{
-			path:'/login',component:login
+			path:'/login',component:login,
+			meta:{
+				index:1,
+				isNavShow:false
+			}
 		},
 		{
-			path:'/',
-			redirect:'/home'
+			path:'/detail',component:detail,
+			meta:{
+				index:1,
+				isNavShow:false
+			}
+		},
+		{
+			path:'/city',component:city,
+			meta:{
+				index:1,
+				isNavShow:false
+			}
 		}
 	]
 })

@@ -162,10 +162,10 @@ img{
 .smore{
     color: #1ABC9C;
 }
-.dome-lists>a{
+.dome-lists>.domemar{
 	margin-left: 2%;
 }
-.dome-lists>a:nth-of-type(1){
+.dome-lists>.domemar:nth-of-type(1){
 	margin-left: 0;
 }
 .dome{

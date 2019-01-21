@@ -1,6 +1,6 @@
 <template>
   <div id="app" v-cloak>
-  	<nav class="footer">
+  	<nav class="footer" v-show="$route.meta.isNavShow">
   		<ul>
 	    	<li v-for="(v,i) in nav" class="v-link-active">
 	    		<router-link :to="v.path" >
@@ -43,6 +43,7 @@ export default {
       ]
     }
   }
+
 }
 </script>
 

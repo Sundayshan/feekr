@@ -1,6 +1,6 @@
 <template>
 	<div class="login-content">
-		<div class="login-inner">
+		<div class="login-inner wrap">
 			<div class="logo">
 				<span></span>
 			</div>

@@ -30,7 +30,7 @@
 								icon:'\ue63b',title:'消息'
 							},
 							{
-								icon:'\ue63c',title:'收藏'
+								icon:'\ue60d',title:'收藏'
 							}						
 						]
 					},

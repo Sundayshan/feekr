@@ -14,13 +14,15 @@
 				<span>-</span>
 			</div>
 			<div class="cities list">
-				<a v-for="(v,i) in citys" class="city f-left" href="">
+				<!--<router-link to="/city" v-for="(v,i) in citys" :key="v.id" class="city f-left" href="">-->
+				<div to="/city" v-for="(v,i) in citys" :key="v.id" class="city f-left" @click="goCity(v.id)">
 					<div class="g-cityItem">
 						<img class="g-citypic" :src="v.imgsrc"/>		
 						<div class="g-cityName txt-center font-12rem">{{v.cityName}}</div>		
 						<div class="txt-center city-desc">{{v.citydesc}}</div>
-					</div>						
-				</a>
+					</div>	
+				</div>
+				<!--</router-link>-->
 			</div>
 		</div>		
 		<section v-for="items in proItem" class="city-container">
@@ -319,6 +321,9 @@
 			},
 			hide(){
 				this.showslide=false;
+			},
+			goCity(id){
+				this.$router.push({path:"city",query:{id:id}})
 			}
 		}
 	}
