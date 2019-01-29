@@ -13,8 +13,10 @@
     <router-view></router-view>
   </div>
 </template>
-
+  
 <script>
+import './assets/js/share.js'
+
 export default {
   name: 'app',
   data () {
