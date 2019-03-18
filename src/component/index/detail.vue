@@ -3,7 +3,7 @@
 		<ul>
 			<li v-for="(pro,index) in proDetail" :key="pro.id">
 				<div class="detail-swiper">
-					<mt-swipe :auto="0" :show-indicators="false">
+					<mt-swipe :auto="0">
 					  	<mt-swipe-item v-for="list in pro.swiper" :key="list.id">
 					  		<img :src="list.url"/>
 					  	</mt-swipe-item>
@@ -15,7 +15,7 @@
 				        	<img :src="v.url"/>
 				        </div>
 				    </div>
-				     <!--如果需要分页器 --
+				     <!--如果需要分页器--
 				    <div class="swiper-pagination">
 				    	<span class="swiper-pagination-current"></span>/
 				    	<span class="swiper-pagination-total"></span>
@@ -126,7 +126,7 @@
             	for(var i = 0;i<res.data.gnProList.length;i++){
             		if(res.data.gnProList[i].id == id){
             			_this.proDetail.push(res.data.gnProList[i]);   
-            			console.log(_this.proDetail);
+//          			console.log(_this.proDetail);
             		}
             	}
             })

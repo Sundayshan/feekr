@@ -15,8 +15,6 @@
 </template>
   
 <script>
-import './assets/js/share.js'
-
 export default {
   name: 'app',
   data () {
@@ -44,8 +42,12 @@ export default {
       	}
       ]
     }
-  }
-
+	},
+	// mounted(){
+	// 	this.$axios.get('api/v2/movie/top250').then(res=>{
+	// 		console.log(res.data);
+	// 	})
+	// }
 }
 </script>
 

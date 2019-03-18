@@ -29,17 +29,17 @@
 				<span class="subtitle">给你最新的旅行热点</span>
 			</section>
 			<div class="article-list list">
-				<a class="newsitems flex-wrap" v-for="n in datas.recentnew" href="">
-					<img class="listimg" :src="n.newImg"/>
+				<router-link class="newsitems flex-wrap" v-for="n in newsdata" to="/news" :key="n.id">
+					<img class="listimg" :src="n.newsImg"/>
 					<div class="news-item flex-item">
-						<p class="news-title">{{n.newTitle}}</p>
+						<p class="news-title">{{n.newsTitle}}</p>
 						<p>
 							<span>{{n.readNum}}</span>
 							<span class="separate">/</span>
 							<span>{{n.newsDate}}</span>
 						</p>
 					</div>
-				</a>
+				</router-link>
 			</div>
 			<a class="getmore" href="">更多旅行资讯</a>
 		</section>
@@ -135,6 +135,7 @@
 				datas:'',
 				showslide:false,
 				proList:'',
+				newsdata:'',
 			}
 		},
 		methods:{
@@ -149,6 +150,9 @@
 			this.$axios.get('src/assets/data/home.json').then((res)=>{
 				this.datas=res.data;
 				this.proList=res.data.season;
+			})
+			this.$axios.get('src/assets/data/articleDetail.json').then((res)=>{
+				this.newsdata=res.data.data.news;
 			})
 		},
 		methods:{

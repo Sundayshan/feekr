@@ -4,7 +4,7 @@ import vueRouter from 'vue-router';
 import router from './assets/js/router.js';
 import axios from 'axios';
 import Swiper from 'swiper'
-
+axios.defaults.withCredentials = true
 import './assets/css/cssreset.css';
 import './assets/css/common.css';
 import './assets/css/iconfont/iconfont.css';

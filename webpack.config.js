@@ -2,12 +2,29 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
+//dev:{
+//  // env: require('./dev.env'),
+//  // port: process.env.PORT || 8080,
+//  // autoOpenBrowser: true,
+//  assetsSubDirectory:'static',
+//  assetsPublicPath:'/',
+//  proxyTable:{
+//    '/api':{
+//      target:"http://api.douban.com/",
+//      changeOrigin:true,
+//      pathRewrite:{
+//        '^/api':''
+//      }
+//    }
+//  }
+//},
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: 'dist/',
     filename: 'build.js'
   },
+  
   module: {
     rules: [
       {

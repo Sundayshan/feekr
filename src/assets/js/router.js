@@ -9,6 +9,7 @@ import login from '../../component/index/login.vue'
 import play from '../../component/index/play.vue'
 import detail from '../../component/index/detail.vue'
 import city from '../../component/index/city.vue'
+import news from '../../component/news/news.vue'
 
 export default new vueRouter({
 	routes:[
@@ -88,6 +89,13 @@ export default new vueRouter({
 		},
 		{
 			path:'/city',component:city,
+			meta:{
+				index:1,
+				isNavShow:false
+			}
+		},
+		{
+			path:'/news',component:news,
 			meta:{
 				index:1,
 				isNavShow:false

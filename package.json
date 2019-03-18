@@ -10,7 +10,6 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "mint-ui": "^2.2.13",
     "swiper": "^4.4.6",
     "vant": "^1.4.5",
@@ -23,6 +22,7 @@
     "not ie <= 8"
   ],
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",

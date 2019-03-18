@@ -1,0 +1,25 @@
+.news{
+    background-color: #fff;
+    .news-header{
+        width: 100%;
+        padding: 1rem;
+        border-bottom: 1px solid #e5e5e5;
+        .iconfont{
+            color: #ccc;
+            font-size: 2rem;
+        }
+        .favor-btn,.share-btn{
+            float: right;
+            margin:0 1rem;
+        }
+    }
+    .article-container{
+        padding: 1.5rem 0.75rem;
+        .title{
+            font-size: 1.4rem;
+            line-height: 1.7;
+            
+        }
+    }
+}
+

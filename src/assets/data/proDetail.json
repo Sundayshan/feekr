@@ -107,6 +107,158 @@
 					"proPrice":"¥ 2700 起/3晚"			
 				}
 			]
+		},
+		{
+			"id":"2",
+			"swiper":[
+				{"url":"../../src/assets/img/pro3_detailpic1.png"},
+				{"url":"../../src/assets/img/pro3_detailpic2.png"},
+				{"url":"../../src/assets/img/pro3_detailpic3.png"},
+				{"url":"../../src/assets/img/pro3_detailpic4.png"},
+				{"url":"../../src/assets/img/pro3_detailpic5.png"},
+				{"url":"../../src/assets/img/pro3_detailpic6.png"},
+				{"url":"../../src/assets/img/pro3_detailpic7.png"},
+				{"url":"../../src/assets/img/pro3_detailpic8.png"},
+				{"url":"../../src/assets/img/pro3_detailpic9.png"},
+				{"url":"../../src/assets/img/pro3_detailpic10.png"},
+				{"url":"../../src/assets/img/pro3_detailpic11.png"}
+			],
+			"proTitle":"城市中心，最接地气的柏悦",
+			"proName":"柬埔寨暹粒柏悦酒店3晚度假套餐-至尊柏悦，限时特惠",
+			"proPrice":"¥3699",
+			"proDay":" 起/3晚",
+			"guideImg":"../../src/assets/img/detail-guide3.jpg",
+			"proDesc":"暹粒柏悦酒店，坐落于周边最有当地特色的老城区夜，夜市和酒吧街，都在举步之遥的距离。虽说位置比较亲民，但是出身确实不凡，出自设计大师Bill Bensley之手",
+			"detail":[
+				{
+					"detailName":"费用包含",
+					"concrete":"【住】双人入住3晚柏悦客房/柏悦景观房<br>【含】每日精美双人早餐<br>【享】到达日欢迎水果<br>【享】每日夜床服务<br>【享】房间内茶具以及咖啡器具免费使用<br>【享】24小时礼宾和健身中心"
+				},
+				{"detailName":"产品详情","concrete":"产品内容"},
+				{"detailName":"购买须知","concrete":"购买内容"}
+			],
+			"uLike":[
+				{
+					"imgurl":"../../src/assets/img/detail-like1.jpg",
+					"proTitle":"安吉灵峰朝花夕舍民宿旅店 | 全年优惠套餐",
+					"proPrice":"¥ 600 起/晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like2.jpg",
+					"proTitle":"青城山六善酒店 | 冬季养生套餐",
+					"proPrice":"¥ 1999 起/晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like3.jpg",
+					"proTitle":"越南昆岛六善酒店3晚/4晚度假套餐 | 世外桃源",
+					"proPrice":"¥ 10899 起/3晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like4.jpg",
+					"proTitle":"老挝琅勃拉邦瑰丽酒店3晚野奢度假之旅",
+					"proPrice":"¥ 2700 起/3晚"			
+				}
+			]
+		},
+		{
+			"id":"3",
+			"swiper":[
+				{"url":"../../src/assets/img/pro4_detailpic1.png"},
+				{"url":"../../src/assets/img/pro4_detailpic2.png"},
+				{"url":"../../src/assets/img/pro4_detailpic3.png"},
+				{"url":"../../src/assets/img/pro4_detailpic4.png"},
+				{"url":"../../src/assets/img/pro4_detailpic5.png"},
+				{"url":"../../src/assets/img/pro4_detailpic6.png"},
+				{"url":"../../src/assets/img/pro4_detailpic7.png"},
+				{"url":"../../src/assets/img/pro4_detailpic8.png"},
+				{"url":"../../src/assets/img/pro4_detailpic9.png"}
+			],
+			"proTitle":"雪国北海道，就爱在雪地中“打滚”",
+			"proName":"一价全包 | 北海道ClubMed TOMAMU度假套餐",
+			"proPrice":"¥2580",
+			"proDay":" 起/晚",
+			"guideImg":"../../src/assets/img/detail-guide4.jpg",
+			"proDesc":"整个度假村展现着日本都市建筑之美，室内空间却融会日本绚烂唯美的四季元素，摩登时尚与习习和风完美融合。",
+			"detail":[
+				{
+					"detailName":"费用包含",
+					"concrete":"【住】入住ClubMed&nbsp;TOMAMU高级房一晚<br>注：价格为一成人价格，2人起拍，单人入住须补房差<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入住4晚及以上享最高30%OFF优惠折扣，详情请询客服<br>【含】主餐厅+特色餐厅每日早／午／晚餐（付费菜单除外）<br>【含】全体供应的饮料小食<br>【享】来自世界各地的G.O带你玩转TOMAMU，每日精彩活动<br>【享】免费的滑雪课程及专业指导（非私教）<br>【享】吧台提供烈酒，红酒，啤酒喝无酒精饮料（付费酒单除外）<br>【享】4-17岁的儿童免费使用儿童俱乐部<br>【享】每日夜间异彩纷呈的演出及娱乐活动<br>【享】云海露台往返缆车券（限滑雪季）<br>【享】微笑沙滩室内游泳池<br>【享】木林之汤（露天温汤）<br>【享】丰富雪道类型的滑雪场<br data-filtered='filtered'>【注】如需预定三人与四人入住房型，请咨询客服后再进行购买，购买后由于房态实时变动，最终以预约后酒店确认为准。由于酒店房间紧张，需要二次确认，敬请谅解！"
+				},
+				{"detailName":"产品详情","concrete":"产品内容"},
+				{"detailName":"购买须知","concrete":"购买内容"}
+			],
+			"uLike":[
+				{
+					"imgurl":"../../src/assets/img/detail-like1.jpg",
+					"proTitle":"安吉灵峰朝花夕舍民宿旅店 | 全年优惠套餐",
+					"proPrice":"¥ 600 起/晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like2.jpg",
+					"proTitle":"青城山六善酒店 | 冬季养生套餐",
+					"proPrice":"¥ 1999 起/晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like3.jpg",
+					"proTitle":"越南昆岛六善酒店3晚/4晚度假套餐 | 世外桃源",
+					"proPrice":"¥ 10899 起/3晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like4.jpg",
+					"proTitle":"老挝琅勃拉邦瑰丽酒店3晚野奢度假之旅",
+					"proPrice":"¥ 2700 起/3晚"			
+				}
+			]
+		},
+		{
+			"id":"4",
+			"swiper":[
+				{"url":"../../src/assets/img/pro5_detailpic1.jpg"},
+				{"url":"../../src/assets/img/pro5_detailpic2.jpg"},
+				{"url":"../../src/assets/img/pro5_detailpic3.jpg"},
+				{"url":"../../src/assets/img/pro5_detailpic4.jpg"},
+				{"url":"../../src/assets/img/pro5_detailpic5.jpg"},
+				{"url":"../../src/assets/img/pro5_detailpic6.jpg"},
+				{"url":"../../src/assets/img/pro5_detailpic7.jpg"},
+				{"url":"../../src/assets/img/pro5_detailpic8.jpg"},
+				{"url":"../../src/assets/img/pro5_detailpic9.jpg"}
+			],
+			"proTitle":"柬埔寨零差评的城市绿洲",
+			"proName":"柬埔寨暹粒传承套房酒店3晚套餐原 | 罗莱夏朵，性价比之王",
+			"proPrice":"¥2799",
+			"proDay":" 起/3晚",
+			"guideImg":"../../src/assets/img/detail-guide3.jpg",
+			"proDesc":"传承套房酒店曾属于法国精品酒店集团罗莱夏朵，而且是罗莱夏朵在柬埔寨收录的唯一一家，可见一斑。（注：罗莱夏朵精品酒店集团(RELAIS & CHATEAUX)于1954年在法国创建，在全球范围内严格甄富有独特创意的顶级特色酒店以及美食家餐厅）",
+			"detail":[
+				{
+					"detailName":"费用包含",
+					"concrete":"【住】双人入住3晚经典房/套房<br>【含】双人每日精致早餐<br>【享】免费WIFI服务<br>【享】机场往返酒店接机一次或者送机一次（套房券可享接送机各一次）<br>【享】每日房间内饮用水<br>【享】到达日欢迎饮料&amp;冰爽毛巾<br>【享】入住期间免费享受双人Heritage水疗15分钟头颈按摩服务1次<br>【享】每日夜床服务<br>【享】视退房当日入住率享受延迟退房至下午15:00点<br>蜜月专享：<br>1.&nbsp;入住首晚房间内鲜花布置<br>2.&nbsp;赠送一瓶气泡酒"
+				},
+				{"detailName":"产品详情","concrete":"产品内容"},
+				{"detailName":"购买须知","concrete":"购买内容"}
+			],
+			"uLike":[
+				{
+					"imgurl":"../../src/assets/img/detail-like1.jpg",
+					"proTitle":"安吉灵峰朝花夕舍民宿旅店 | 全年优惠套餐",
+					"proPrice":"¥ 600 起/晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like2.jpg",
+					"proTitle":"青城山六善酒店 | 冬季养生套餐",
+					"proPrice":"¥ 1999 起/晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like3.jpg",
+					"proTitle":"越南昆岛六善酒店3晚/4晚度假套餐 | 世外桃源",
+					"proPrice":"¥ 10899 起/3晚"			
+				},
+				{
+					"imgurl":"../../src/assets/img/detail-like4.jpg",
+					"proTitle":"老挝琅勃拉邦瑰丽酒店3晚野奢度假之旅",
+					"proPrice":"¥ 2700 起/3晚"			
+				}
+			]
 		}
 	]
 }

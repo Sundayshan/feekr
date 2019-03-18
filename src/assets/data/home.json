@@ -20,23 +20,6 @@
 		{"icon":"\ue656","title":"美物","color":"#A5CE00","path":"/play"},
 		{"icon":"\ue68f","title":"研究所","color":"#00AC59","path":"/play"}
 	],
-	"recentnew":[
-		{
-			"newImg":"../../src/assets/img/zixun1.jpg",
-			"newTitle":"在南京虚度了七年光阴，我终于整理出了这份最地道的城市漫步指南",
-			"readNum":"17742人阅读","newsDate":"2018-11-27"
-		},
-		{
-			"newImg":"../../src/assets/img/zixun2.jpg",
-			"newTitle":"世界最难签的国家可以落地签了！曾被LP推荐，连霉霉都跑去拍MV，这个小国要火了！",
-			"readNum":"119227人阅读","newsDate":"2018-11-27"
-		},
-		{
-			"newImg":"../../src/assets/img/zixun3.jpg",
-			"newTitle":"超模刘雯“零片酬”出演家乡宣传片，原来她长大的地方这么美！",
-			"readNum":"445人阅读',newsDate:'2018-11-20"
-		}
-	],
 	"season":[
 		{
 			"areaTrip":"国内度假",
@@ -70,7 +53,7 @@
 					"id":"3",
 					"goodspic":"../../src/assets/img/aboard2.jpg",
 					"goodsName":"秋冬·滑雪抢先订 | 北海道星野Tomamu塔娃3晚套餐",
-					"cityName":"日本 - 北海道","price":"￥100 起"
+					"cityName":"日本 - 北海道","price":"￥2580 起"
 				},
 				{
 					"id":"4",
