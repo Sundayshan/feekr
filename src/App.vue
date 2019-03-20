@@ -38,7 +38,7 @@ export default {
       	{
       		name:'我的',
       		icon:'\ue605',
-      		path:'/login'
+      		path:'/user'
       	}
       ]
     }

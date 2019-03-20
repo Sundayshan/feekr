@@ -12,10 +12,13 @@ import './assets/css/iconfont/iconfont.css';
 import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';
 
+//import ElementUI from 'element-ui';
+//import 'element-ui/lib/theme-chalk/index.css';
+
 Vue.prototype.$axios = axios;
 Vue.use(vueRouter);
 Vue.use(MintUI);
-
+//Vue.use(ElementUI);
 
 new Vue({
     el: '#app',

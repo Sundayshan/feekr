@@ -14,11 +14,18 @@
         }
     }
     .article-container{
-        padding: 1.5rem 0.75rem;
+        padding: 1rem 1rem;
         .title{
             font-size: 1.4rem;
             line-height: 1.7;
             
+        }
+        .article-content{
+            p{
+                margin: .5rem;
+                line-height: 1.6;
+                font-size: 17px;
+            }
         }
     }
 }

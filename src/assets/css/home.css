@@ -225,7 +225,12 @@ img{
 }
 .cities.list{
 	padding-bottom: 0.8rem;
-	padding-top: 0.8rem;
+	padding-top: 1.5rem;
+	border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+}
+.cities.getmore{
+    margin-bottom: 4.16rem;
 }
 .icon-style{
 	color: #fff;

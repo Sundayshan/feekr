@@ -125,8 +125,7 @@
             this.$axios.get('src/assets/data/proDetail.json').then((res)=>{
             	for(var i = 0;i<res.data.gnProList.length;i++){
             		if(res.data.gnProList[i].id == id){
-            			_this.proDetail.push(res.data.gnProList[i]);   
-//          			console.log(_this.proDetail);
+            			_this.proDetail.push(res.data.gnProList[i]); 
             		}
             	}
             })
