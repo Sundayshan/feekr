@@ -38,7 +38,6 @@
 </template>
 
 <script>
-	import '../../assets/css/play.css'
 	export default{
 		data(){
 			return{
@@ -87,4 +86,5 @@
 </script>
 
 <style>
+	@import '../../assets/css/play.css';
 </style>

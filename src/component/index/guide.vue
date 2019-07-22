@@ -95,7 +95,6 @@
 
 
 <script>
-	import '../../assets/css/guide.css'
 	export default{
 		data(){
 			return{
@@ -330,6 +329,7 @@
 </script>
 
 <style>
+@import '../../assets/css/guide.css';
 body{
 	background-color: #f6f6f6;
     color: #2d2d2d;

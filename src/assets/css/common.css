@@ -1,6 +1,9 @@
 *{margin:0;padding:0;box-sizing: border-box;}
 li{list-style:none}
-img{vertical-align:top;border:none}
+img{
+	vertical-align:top;
+	border:none;
+	}
 html{
 	font-size: 12px;
 }
@@ -10,6 +13,11 @@ body{
     -webkit-font-smoothing: antialiased;
     max-width: 640px;
     margin: 0 auto;	
+}
+a{
+	list-style: none;
+	text-decoration: none;
+	color: #2d2d2d;
 }
 input{
 	outline: none;
@@ -44,6 +52,6 @@ input{
     background: rgba(238,238,238,0.98);
     font-family: PingFangSC-Thin, sans-serif;
 }
-#app .router-link-exact-active{
+.footer .router-link-exact-active{
 	color: #1abc9c !important;
 }

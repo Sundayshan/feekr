@@ -23,7 +23,7 @@
     margin-bottom: 1.5rem;
 }
 .register-content .input-wrap input{
-    width: 85%;
+    width: 84%;
     padding: 1rem 0;
     font-size: 1rem;
     margin-left: 1rem;
@@ -32,7 +32,7 @@
     color: #333;
 }
 .register-content .input-wrap>.iconfont{
-	font-size: 1.8rem;
+	font-size: 2.0rem;
 	color: #999;
 	vertical-align: middle;
 }
@@ -46,11 +46,11 @@
     width: 100%;
     text-align: center; 
     padding: 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-radius: 3px;
     margin-top: 2rem;
     border: none;
-
+	outline: none;
 }
 .protocol>p{
 	padding-top: 2rem;

@@ -1,3 +1,18 @@
+.mint-swipe-items-wrap img {
+    display: block;
+    width: 100%;
+}
+.mint-swipe-indicator{
+	margin: 0 0.38rem !important;
+	background: #fff !important;
+	opacity: 0.5 !important;
+}
+.is-active{
+	opacity: 1 !important;
+}
+.detail{
+	height: 100%;
+}
 .detail .swiper-pagination{
 	right: .625rem;
     bottom: .625rem;
@@ -6,11 +21,6 @@
     font-size: 1rem;
     color: #fff;
 }
-/*.swiper-container {
-    width: 500px;
-    height: 300px;
-    margin: 20px auto;
-}*/
 .mint-swipe-items-wrap{
 	padding-bottom: 56.3%;
 }
@@ -132,8 +142,8 @@
     background-color: #fff;
 }
 .footer_fixed{
-	/*position: fixed;*/
-	position: sticky;  /*固定定位占位*/
+	position: fixed;
+	/*position: sticky;  /*固定定位占位*/
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -150,8 +160,16 @@
     border-right: 1px solid #ccc;
 	width: 15%;
 }
+.footer_fixed ul li:nth-of-type(4){
+	width: 27.5%;
+	color: #fff;
+	background-color: rgb(50, 208, 100);
+	font-size: 1.33rem;
+	font-weight: bold;
+	line-height: 3.2rem;
+}
 .footer_fixed ul li:last-child{
-	width: 55%;
+	width: 27.5%;
 	color: #fff;
 	background-color: rgb(26, 188, 156);
 	font-size: 1.33rem;
@@ -165,8 +183,9 @@
 .footer_fixed ul li i{
 	font-size: 1.75rem;
 }
+
 .detail-like{
-    padding: 0 1.08rem .625rem;
+    padding: 0 1.08rem 4.3rem;
     margin-top: .75rem;
     background-color: #fff;
 }
@@ -177,4 +196,35 @@
 }
 .detail .like-lists{
 	padding-top: 0;
+}
+.like-lists{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1.67rem;
+}
+.like-lists li{
+	display: block;
+	padding-bottom: 1.46rem;
+    width: 49.2%;
+    font-size: 0.83rem;
+    line-height: 1.47rem;
+    text-align: center;
+}
+.like-item img{
+	width: 100%;
+    height: 108.125px;
+}
+.like-item h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: .5rem;
+}
+.like-item p{
+    line-height: 1.875rem;
+    color: #1ABC9C;
+}
+.mint-actionsheet-listitem, .mint-actionsheet-button{
+	font-size: 1.2rem;
 }

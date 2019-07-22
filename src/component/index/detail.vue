@@ -1,7 +1,7 @@
 <template>
 	<div class="detail">
-		<ul>
-			<li v-for="(pro,index) in proDetail" :key="pro.id">
+		<ul v-for="(pro,index) in proDetail" :key="pro.id">
+			<li>
 				<div class="detail-swiper">
 					<mt-swipe :auto="0">
 					  	<mt-swipe-item v-for="list in pro.swiper" :key="list.id">
@@ -9,23 +9,11 @@
 					  	</mt-swipe-item>
 					</mt-swipe>
 				</div>
-				<!--<div class="swiper-container">
-				    <div class="swiper-wrapper">
-				        <div class="swiper-slide" v-for="(v,i) in proDetail.swiper" :key="v.id">
-				        	<img :src="v.url"/>
-				        </div>
-				    </div>
-				     <!--如果需要分页器--
-				    <div class="swiper-pagination">
-				    	<span class="swiper-pagination-current"></span>/
-				    	<span class="swiper-pagination-total"></span>
-				    </div>
-				</div>-->
 				<div class="detail-head">
 					<h5 class="product-detail-art">{{pro.proTitle}}</h5>
 					<h3 class="product-detail-name">{{pro.proName}}</h3>
 					<p class="product-detail-price" style="color: rgb(26, 188, 156);">
-						<b>{{pro.proPrice}} </b><span> 起/{{pro.proDay}}晚</span>
+						<b>￥{{pro.proPrice}} </b><span> 起/{{pro.proDay}}晚</span>
 					</p>
 				</div>
 				<div class="product-detail-menu" style="color: rgb(26, 188, 156);">
@@ -66,57 +54,98 @@
 							<i class="iconfont icon-shouye1"></i>
 							<a href="">首页</a>
 						</li>
-						<li>
+						<li @click="kefu()">
 							<i class="iconfont icon-kefunv"></i>
-							<a href="">客服</a>
+							<a href="javascript:;">客服</a>
 						</li>
-						<li>
-							<i class="iconfont icon-shoucang1"></i>
-							<span>收藏</span>
+						<li @click="pickGoods(pro)">
+							<div v-show="!isLight">
+								<i class="iconfont icon-shoucang1"></i>
+								<span>收藏</span>
+							</div>
+							<div v-show="isLight">
+								<i class="iconfont icon-star__easyico" style="color: yellow;"></i>
+								<span>收藏</span>
+							</div>
 						</li>
-						<li>立即预定</li>
+						<li @click="carting()">加入购物车</li>
+						<li @click="booking()">立即预定</li>
 					</ul>
 				</div>
 			</li>
+			<li>
+				<!--客服-->
+				<mt-actionsheet :actions="actions" v-model="sheetVisible" cancelText="取消">
+				</mt-actionsheet>
+			</li>
+			<li>
+				<!--预定页面-->
+				<transition name="show"> 
+			        <section class="orderBooking show" v-if="bookingslide" @click="cancel()" @touchmove.prevent>
+			        	<div class="combo" @click.stop>
+			        		<div class="booking">
+				        		<div class="booking-message">
+				        			<div class="booking-name">
+				        				<p>{{pro.proTitle}}</p>
+				        				<i class="iconfont icon-guanbi" @click="cancel()"></i>
+				        			</div>
+				        			<div class="booking-room">
+				        				<span class="room">{{pro.proRoom}}</span>
+				        				<span class="price">￥{{pro.proPrice}}</span>
+				        			</div>
+				        		</div>
+				        		<div class="bookingNum">
+				        			<ul>
+				        				<li>购买数量：</li>
+				        				<li @click="reduce()">-</li>
+				        				<li><input v-model="numValue" readonly/></li>
+				        				<li @click="add()">+</li>
+				        			</ul>
+				        		</div>
+				        		<div class="booking-date">{{pro.proDate}}</div>
+				        	</div>
+					        <footer>
+					        	<div class="bookingBtn" v-if="cartBtn">
+					        		<span class="totalfee">￥{{numValue*pro.proPrice}}</span>
+				        			<div class="next" to="confirm" @click="nextMessage(pro.id,numValue)">下一步，填写信息</div>
+					        	</div>
+					        	<div class="cartBtn" v-else="cartBtn">
+					        		<div @click="addCart(pro,numValue)">确定</div>
+					        	</div>
+				        	</footer>
+			        	</div>
+			        </section>
+		        </transition>
+			</li>
 		</ul>
-
+		
 	</div>
-	
 </template>
 <script>
-	import '../../assets/css/detail.css'
-	import '../../assets/css/swiper.min.css'
-	import Swiper from 'swiper'
+	import {mapGetters,mapMutations} from 'vuex'
+	import {Toast,MessageBox} from 'mint-ui'
 	export default{
 		data(){
 			return{
 				currentDetail:'',
 				proDetail:[],
 				selected:0,
-//				n:0
+				bookingslide:false,
+				cartBtn:true,
+				numValue:1,
+				isLight:false,
+				actions:[
+					{
+						name:'客服电话：123-123-0000'
+					}
+				],
+				sheetVisible:false
 			}
 		},
-		mounted(){
-//			this.$axios.get('src/assets/data/proDetail.json').then((res)=>{
-//				this.proDetail=res.data.gnProList[indexs];
-//			})
-//			this.$axios.get('src/assets/data/proDetail.json').then((res)=>{
-//				this.n=this.$route.params.id;
-//				this.proDetail=res.data.gnProList;
-//			})
-			
-			this.$nextTick(function(){				
-				    var mySwiper = new Swiper ('.swiper-container', {
-//		  			autoplay:true,
-				    loop: true, // 循环模式选项
-				    initialSlide :0,
-				    observer:true,//修改swiper自己或子元素时，自动初始化swiper
-				    observeParents:true,//修改swiper的父元素时，自动初始化swiper
-				    // 如果需要分页器
-				    pagination:'.swiper-pagination',
-				})
-			
-		    
+		computed:{
+			...mapGetters(["this.$store.state.goods"]),
+			...mapGetters({
+				isCollection:"getterIsCollection"
 			})
 		},
 		created(){
@@ -130,27 +159,102 @@
             	}
             })
         },
-//		watch:{
-//			n(){
-//				for(var i=0;this.proDetail.length;i++){
-//					for(var j=0;j<this.proDetail[i].gnProList[j].id;j++){
-//						if(this.n==this.proDetail[i].gnProList[j].id){
-//							this.currentDetail=this.proDetail[i].gnProList[j]
-//						}
-//					}
-//				}
-//			}
-//		},
-
-        
 		methods:{
 			change(str){
 				this.selected=str
+			},
+			booking(){
+				this.cartBtn = true;
+				this.bookingslide= true;
+			},
+			carting(){
+				this.booking();
+				this.cartBtn = false;
+			},
+			cancel(){
+				this.bookingslide= false;
+			},
+			reduce(){
+				if(this.numValue==1){
+					this.numValue=1;
+					
+				}else{
+					this.numValue--;
+				}
+			},
+			add(){
+				this.numValue++;
+			},
+			kefu(){
+				this.sheetVisible=true;
+			},
+			nextMessage(id,value){
+				this.$router.push({
+					path:"confirm",
+					query:{
+						id:id,
+						value:value
+					}
+				})
+			},
+			addCart(cart,cartNum){
+				console.log(this.$route.query.value);
+				var cartExist = this.$store.state.carts.find(cartData => {
+					return cartData.id == cart.id;
+				})
+				console.log(cartExist)
+				if(!cartExist){
+					var cartData = {
+						id: cart.id,
+						goodsName:cart.proName,
+						goodsPrice:cart.proPrice,
+						goodsImg:cart.proImg,
+						goodsNum:cartNum,
+						pick:""
+					};
+					this.$store.dispatch('setCarts',cartData);
+					this.bookingslide = false;
+					Toast({
+						message:"加购成功",
+						duration:950
+					})
+				}else{
+					MessageBox("提示", "商品已存在购物车");
+				}
+			},
+			pickGoods(pro){
+				this.isLight=!this.isLight;
+				var idExist = this.$store.state.goods.find(data =>{
+					return data.id == pro.id;
+				});
+				if(!idExist){ //没有收藏过
+					var data = {
+						id: pro.id,
+						name:pro.proName,
+						title:pro.proTitle,
+						img:pro.proImg,
+						price:pro.proPrice,
+						day:pro.proDay
+					}
+					Toast({
+						message:"收藏成功",
+						duration:950
+					})
+					this.$store.dispatch("setGoods",data)
+				}else{  //收藏过
+					Toast({
+						message:"您已经收藏过了",
+						duration: 950
+					})
+				}
 			}
 		}
-		
 	}
 </script>
 
 <style>
+	@import '../../assets/css/detail.css';
+</style>
+<style lang="scss" scoped>
+	@import '../../assets/css/booking.scss';
 </style>

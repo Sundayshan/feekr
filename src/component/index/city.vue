@@ -3,7 +3,7 @@
 		<div class="city_top">
 			<img src="../../assets/img/guidecity1.jpg"/>
 			<div class="font_up">
-				<p class="city_name">{{cityDetail1.cityName}}</p>
+				<p class="city_name">杭州</p>
 			</div>
 		</div>
 		<div class="guide_city_nav">
@@ -105,7 +105,7 @@
 </template>
 
 <script>
-	import '../../assets/css/city.css'
+	
 	export default{
 		data(){
 			return{
@@ -138,5 +138,5 @@
 </script>
 
 <style>
-	
+	@import '../../assets/css/city.css';
 </style>

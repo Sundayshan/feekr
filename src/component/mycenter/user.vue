@@ -4,7 +4,7 @@
 			<my-Header title="我的"></my-Header>
 			<div class="user-msg table-mode">
 				<div class="table-cell"><img class="user-pic" src="../../assets/img/userphoto.jpg"/></div>
-				<div class="table-cell"><p class="nickname">Sunday</p></div>
+				<div class="table-cell"><p class="nickname">{{username}}</p></div>
 				<div class="table-cell iconfont icon-jiantou"></div>
 			</div>
 			<div v-for="i in groups" class="user-opt" :key="i.id">
@@ -20,11 +20,17 @@
 
 <script>
 	
-	import myHeader from './component/myHeader.vue'
+	import myHeader from '../common/myHeader.vue'
+	import { mapState, mapMutations, mapGetters } from "vuex";
 	export default{
 		name:'user',
 		components:{
 			myHeader
+		},
+		computed:{
+			...mapGetters({
+				username:"getterUserData"
+			})
 		},
 		data(){
 			return{
@@ -38,17 +44,20 @@
 								icon:'\ue60d',title:'收藏',href:'/favor'
 							},
 							{
-								icon:'\ue63b',title:'消息',href:'/message'
-							}					
+								icon:'\ue632',title:'购物车',href:'cart'
+							},
+							{
+								icon:'\ue63b',title:'消息',href:'#'
+							}						
 						]
 					},
 					{
 						menu:[
 							{
-								icon:'\ue606',title:'设置',href:'/message'
+								icon:'\ue606',title:'设置',href:'#'
 							},
 							{
-								icon:'\ue649',title:'反馈',href:'/mesage'
+								icon:'\ue649',title:'反馈',href:'#'
 							}						
 						]
 					}
@@ -59,5 +68,5 @@
 </script>
 
 <style scoped>
-	@import '../../assets/css/user.css'
+	@import '../../assets/css/user.css';
 </style>

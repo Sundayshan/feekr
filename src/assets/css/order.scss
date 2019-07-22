@@ -1,0 +1,90 @@
+.order{
+    .headerTab{
+        top: 0;
+        position: fixed;
+        z-index: 1000;
+        width:100%;
+    }
+    .orderMain{
+        margin: 5rem 0 0 0;
+        .orderList{
+            &:after{
+                content:'';
+                clear: both;
+                display: block;
+            }
+            margin:1rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 0.6rem;
+            .orderListHead{
+                display: flex;
+                padding-bottom: 1rem;
+                span:nth-of-type(1){
+                    flex: 1;
+                }
+            }
+            .orderListDetail{
+                padding: 1rem 0;
+                display: flex;
+                border-top: 1px solid #e8e8e8;
+                border-bottom: 1px solid #e8e8e8;
+                .imgbox{
+                    width: 27%;
+                    height: 27%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-style: none;
+                    }
+                }
+                .orderListText{
+                    margin-left: 1rem;
+                    p:nth-of-type(1){
+                        font-size: 1.1rem;
+                    }
+                    p:nth-of-type(2){
+                        margin-top: 1.8rem;
+                        color: #aaa;
+                    }
+                }
+                .orderPrice{
+                    margin-left: 1.5rem;
+                    .price{
+                        color: #1ABC9C;
+                        font-size: 1.1rem;
+                    }
+                    .num{
+                        color: #111;
+                        float: right;
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+            .orderListBottom{
+                margin-top: 0.8rem;
+                .top{
+                    display: flex;
+                    justify-content: flex-end;
+                    .totalPrice{
+                        color: #1ABC9C;
+                        font-size: 1.2rem;
+                    }
+                }
+                .bottom{
+                    .orderListBtn{
+                        float: right;
+                        width: 5.4rem;
+                        height: 1.8rem;
+                        line-height: 1.6rem;
+                        border: 1px solid #999;
+                        color: #666;
+                        text-align: center;
+                        border-radius: 0.5rem;
+                        margin: 0.8rem 0 0 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

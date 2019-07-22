@@ -5,9 +5,10 @@ Licensed under the BSD License.
 http://yuilibrary.com/license/
 网址：http://yuilibrary.com/yui/docs/cssreset/
 */
+
 html{
-	color:#000;
-	background:#FFF;
+	/*color:#000;
+	background:#FFF;*/
 }body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,footer,article,aside,header,section,nav,figure,figcaption,hgroup{
 	margin:0;
 	padding:0;

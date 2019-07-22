@@ -1,5 +1,6 @@
 <template>
 	<div class="home">
+		<section>
 		<div class="swipe">		
 			<mt-swipe :auto="2000">
 			  <mt-swipe-item v-for="(v,i) in datas.items" :key="v.id">
@@ -83,6 +84,7 @@
 			</div>
 			<a class="getmore" href="">更多目的地推荐</a>		
 		</section>
+		</section>
 	    <div class="searchPage" v-bind:class="{show:showslide}">
 	    	<div class="table-mode search-content">
 	    		<div @click="hide()" class="iconfont icon-buoumaotubiao09 table-cell"></div>
@@ -95,46 +97,44 @@
 	    			<a href="" class="search-btn">搜索</a>
 	    		</div>
 	    	</div>
-    		<div class="search-panel">
-    			<div class="search-wrap">
-    				<div class="recent-search txt-center">
-    					<span>-</span>
-    					<span>最近搜索</span>
-    					<span>-</span>
-    				</div>
-    				<div class=""></div>
-    			</div>
-    			<div class="search-wrap">
-    				<div class="recent-search txt-center">
-    					<span>-</span>
-    					<span>热门搜索</span>
-    					<span>-</span>
-    				</div>
-    				<div class="hot-tag">
-    					<a href="#">杭州</a>
-    					<a href="#">上海</a>
-    					<a href="#">苏州</a>
-    					<a href="#">莫干山</a>
-    					<a href="#">成都</a>
-    				</div>
-    			</div>
-    		</div>
-	   </div>
+			<div class="search-panel">
+				<div class="search-wrap">
+					<div class="recent-search txt-center">
+						<span>-</span>
+						<span>最近搜索</span>
+						<span>-</span>
+					</div>
+					<div class=""></div>
+				</div>
+				<div class="search-wrap">
+					<div class="recent-search txt-center">
+						<span>-</span>
+						<span>热门搜索</span>
+						<span>-</span>
+					</div>
+					<div class="hot-tag">
+						<a href="#">杭州</a>
+						<a href="#">上海</a>
+						<a href="#">苏州</a>
+						<a href="#">莫干山</a>
+						<a href="#">成都</a>
+					</div>
+				</div>
+			</div>
+	    </div>    
 	</div>		
 </template>
 
 <script>
-	import '../../assets/css/home.css'
 	export default{
 		components:{
-			
 		},
 		data(){
 			return{
 				datas:'',
-				showslide:false,
 				proList:'',
 				newsdata:'',
+				showslide:false
 			}
 		},
 		methods:{
@@ -164,7 +164,9 @@
 	}
 </script>
 
-<style>
+<style scoped>
+@import '../../assets/css/home.css';
+@import '../../assets/css/search.css';
 body,html{
 	width: 100%;
 }

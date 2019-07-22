@@ -43,23 +43,26 @@ export default {
       ]
     }
 	},
-	// mounted(){
-	// 	this.$axios.get('api/v2/movie/top250').then(res=>{
-	// 		console.log(res.data);
-	// 	})
-	// }
 }
 </script>
 
 <style>
+@import './assets/css/common.css';
 [v-cloak]{
 	display: none;
 }
 #app {
   font-family: PingFangSC-Light, sans-serif;
+  width: 100%;
+	height: 100%;
+	position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
 }
 body,html{
 	width: 100%;
+	height: 100%;
 }
 body{
     background-color: #f6f6f6;
@@ -67,5 +70,11 @@ body{
     -webkit-font-smoothing: antialiased;
     max-width: 640px;
     margin: 0 auto;
+}
+.mint-msgbox-confirm{
+	color: #1ABC9C;
+}
+.txt-center{
+	text-align: center;
 }
 </style>

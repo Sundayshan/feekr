@@ -229,7 +229,7 @@ img{
 	border-bottom: 1px solid #F2F2F2;
     border-top: 1px solid #F2F2F2;
 }
-.cities.getmore{
+.cities+.getmore{
     margin-bottom: 4.16rem;
 }
 .icon-style{

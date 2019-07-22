@@ -37,6 +37,7 @@ img{
 	padding: 1.5rem 0.8rem;
 	background: transparent;
 	width: 90%;
+	color: #fff;
 }
 .login-submit{
     display: block;
@@ -48,6 +49,7 @@ img{
     background: #fff;
     padding: 1.2rem 0;
     border-radius: 6px;
+    outline: none;
 }
 .login-inner .input-wrap {
     border-bottom: 1px solid #8adece;
@@ -121,4 +123,10 @@ img{
 .third-list{
     text-align: center;
 	padding: 2rem 0 1rem;
+}
+.f-left{
+	float: left;
+}
+.f-right{
+	float: right;
 }

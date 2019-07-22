@@ -81,7 +81,6 @@
 </template>
 
 <script>
-	import '../../assets/css/travel.css'
 export default{
 	data(){
 		return{
@@ -218,4 +217,5 @@ export default{
 </script>
 
 <style>
+	@import '../../assets/css/travel.css';
 </style>

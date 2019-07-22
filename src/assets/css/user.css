@@ -1,3 +1,6 @@
+a{
+	color: #2D2D2D;
+}
 .user-msg{
 	font-size: 1.4rem;
     position: relative;
@@ -63,4 +66,7 @@
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+}
+.router-link-exact-active {
+    color: #333 !important;
 }
